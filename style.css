@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    
     box-sizing: border-box;
 }
 
@@ -52,7 +53,21 @@ a {
 .nav-item {
     margin-left: 5rem;
 }
-
+.nav-item button{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#ff69e4;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
@@ -164,7 +179,7 @@ span{
     background:url(back2.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: auto;
     height: auto;
     background-position: right;
     
@@ -187,10 +202,12 @@ span{
   .who{
     padding: 2rem 7%;
   }
-  .who h1{
+  .us h1{
     color: #c211a1;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
   }
 .mainwho{
     display: flex;
@@ -226,3 +243,231 @@ span{
  background-color: transparent;
  border: 2px solid #fff;
  }
+
+ .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;margin-bottom: 15px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #7f6cff;
+    height: 15rem;
+    width: auto;
+   
+  }
+  .card p{
+    text-align: justify;
+    font-weight: bold;
+    margin-top: 19px;
+
+  }
+  .card h3{
+    border-bottom: 2px solid black;
+  }
+
+.card button:hover{
+    background-color: rgb(255, 191, 0);
+}
+
+
+
+form {  margin:50px auto; float: left;}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:300;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #7f6cff;
+  transition: all 0.3s;
+  padding: 9px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #7f6cff; }
+
+textarea {
+  height: 1px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#ff69e4;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  height: 20px;
+}
+.col button{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#ff69e4;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+
+
+
+
+}
+[type="submit"]:hover { background:#c211a1; }
+
+.dummy_page {
+    height: 200px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-sizing: border-box;
+}
+  /* STYLES SPECIFIC TO FOOTER  */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #0f0f15;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #7f6cff;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+.col input{
+    width:190px;
+    height: 20px;
+}
