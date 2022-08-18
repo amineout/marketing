@@ -7,4 +7,7 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+function boton(){
+    alert("wach jhelti matb9ach gha katwrek rekz");
 
+}
